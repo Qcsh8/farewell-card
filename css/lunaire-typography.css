@@ -1,0 +1,434 @@
+/* Lunaire Design System — Typography Utility Classes */
+
+.desktop-body-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.desktop-body-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.desktop-body-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.desktop-footnote-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 10.0px;
+  line-height: 12.0px;
+}
+.desktop-footnote-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 10.0px;
+  line-height: 12.0px;
+}
+.desktop-footnote-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10.0px;
+  line-height: 12.0px;
+}
+.desktop-header-1-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48.0px;
+  line-height: 56.0px;
+}
+.desktop-header-1-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 48.0px;
+  line-height: 56.0px;
+}
+.desktop-header-1-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 48.0px;
+  line-height: 56.0px;
+}
+.desktop-header-2-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40.0px;
+  line-height: 48.0px;
+}
+.desktop-header-2-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 40.0px;
+  line-height: 48.0px;
+}
+.desktop-header-2-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40.0px;
+  line-height: 48.0px;
+}
+.desktop-header-3-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32.0px;
+  line-height: 40.0px;
+}
+.desktop-header-3-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 32.0px;
+  line-height: 40.0px;
+}
+.desktop-header-3-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 32.0px;
+  line-height: 40.0px;
+}
+.desktop-header-4-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28.0px;
+  line-height: 36.0px;
+}
+.desktop-header-4-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 28.0px;
+  line-height: 36.0px;
+}
+.desktop-header-4-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 28.0px;
+  line-height: 36.0px;
+}
+.desktop-header-5-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24.0px;
+  line-height: 32.0px;
+}
+.desktop-header-5-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24.0px;
+  line-height: 32.0px;
+}
+.desktop-header-5-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24.0px;
+  line-height: 32.0px;
+}
+.desktop-header-6-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20.0px;
+  line-height: 28.0px;
+}
+.desktop-header-6-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20.0px;
+  line-height: 28.0px;
+}
+.desktop-header-6-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20.0px;
+  line-height: 28.0px;
+}
+.desktop-label-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12.0px;
+  line-height: 16.0px;
+}
+.desktop-label-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12.0px;
+  line-height: 16.0px;
+}
+.desktop-label-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.0px;
+  line-height: 16.0px;
+}
+.desktop-link-button-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.desktop-link-button-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.desktop-link-button-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.desktop-link-button-small-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}
+.desktop-link-button-small-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}
+.desktop-link-button-small-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}
+.desktop-sub-body-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}
+.desktop-sub-body-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}
+.desktop-sub-body-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}
+.mobile-body-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.mobile-body-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.mobile-body-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.mobile-footnote-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 10.0px;
+  line-height: 12.0px;
+}
+.mobile-footnote-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 10.0px;
+  line-height: 12.0px;
+}
+.mobile-footnote-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10.0px;
+  line-height: 12.0px;
+}
+.mobile-header-1-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32.0px;
+  line-height: 40.0px;
+}
+.mobile-header-1-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 32.0px;
+  line-height: 40.0px;
+}
+.mobile-header-1-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 32.0px;
+  line-height: 40.0px;
+}
+.mobile-header-2-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28.0px;
+  line-height: 36.0px;
+}
+.mobile-header-2-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 28.0px;
+  line-height: 36.0px;
+}
+.mobile-header-2-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 28.0px;
+  line-height: 36.0px;
+}
+.mobile-header-3-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32.0px;
+  line-height: 32.0px;
+}
+.mobile-header-3-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24.0px;
+  line-height: 32.0px;
+}
+.mobile-header-3-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24.0px;
+  line-height: 32.0px;
+}
+.mobile-header-4-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22.0px;
+  line-height: 28.0px;
+}
+.mobile-header-4-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 22.0px;
+  line-height: 28.0px;
+}
+.mobile-header-4-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22.0px;
+  line-height: 28.0px;
+}
+.mobile-header-5-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20.0px;
+  line-height: 24.0px;
+}
+.mobile-header-5-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20.0px;
+  line-height: 24.0px;
+}
+.mobile-header-5-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20.0px;
+  line-height: 24.0px;
+}
+.mobile-header-6-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18.0px;
+  line-height: 24.0px;
+}
+.mobile-header-6-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18.0px;
+  line-height: 24.0px;
+}
+.mobile-header-6-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18.0px;
+  line-height: 24.0px;
+}
+.mobile-label-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12.0px;
+  line-height: 16.0px;
+}
+.mobile-label-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12.0px;
+  line-height: 16.0px;
+}
+.mobile-label-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.0px;
+  line-height: 16.0px;
+}
+.mobile-link-button-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.mobile-link-button-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.mobile-link-button-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16.0px;
+  line-height: 24.0px;
+}
+.mobile-link-button-small-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}
+.mobile-link-button-small-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}
+.mobile-link-button-small-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}
+.mobile-sub-body-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}
+.mobile-sub-body-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}
+.mobile-sub-body-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14.0px;
+  line-height: 20.0px;
+}

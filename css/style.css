@@ -1,0 +1,211 @@
+/* Page layout for Bobby's farewell card — built on Lunaire DS tokens */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: var(--background-background);
+  color: var(--black-100);
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: var(--sizing-32) var(--sizing-24) var(--sizing-64);
+}
+
+/* ── Hero ── */
+.hero {
+  background: var(--gradient-lunaire);
+  padding: var(--sizing-64) var(--sizing-24);
+  text-align: center;
+  box-shadow: var(--card-shadow);
+}
+
+.hero-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.hero-photo {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--white-100);
+  box-shadow: var(--modal-card-shadow);
+  margin-bottom: var(--sizing-16);
+}
+
+.hero-eyebrow {
+  color: var(--primary-120);
+  letter-spacing: 2px;
+  margin: 0 0 var(--sizing-8);
+}
+
+.hero-title {
+  margin: 0 0 var(--sizing-16);
+  color: var(--primary-120);
+}
+
+.hero-subtitle {
+  margin: 0;
+  color: var(--shades-100);
+}
+
+/* ── Signature form card ── */
+.signature-form-card {
+  background: var(--white-100);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  padding: var(--sizing-32);
+  margin-top: calc(-1 * var(--sizing-32));
+  position: relative;
+  z-index: 1;
+}
+
+.signature-form-card h2 {
+  margin: 0 0 var(--sizing-4);
+  color: var(--primary-120);
+}
+
+.form-hint {
+  margin: 0 0 var(--sizing-24);
+  color: var(--shades-80);
+}
+
+.field {
+  margin-bottom: var(--sizing-16);
+}
+
+.field label {
+  display: block;
+  margin-bottom: var(--sizing-8);
+  color: var(--shades-100);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: var(--sizing-8) var(--sizing-16);
+  border: 1px solid var(--primary-40);
+  border-radius: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--desktop-body-regular-size);
+  color: var(--black-100);
+  background: var(--white-100);
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--buttons-buttons-state-focus-outline);
+  box-shadow: 0 0 0 3px var(--secondary-1-40);
+}
+
+.btn-primary {
+  background: var(--buttons-buttons-state-default-btn);
+  color: var(--buttons-buttons-state-default-btn-content);
+  border: none;
+  border-radius: 999px;
+  padding: var(--sizing-16) var(--sizing-32);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primary:hover {
+  background: var(--buttons-buttons-state-hover-pressed-btn-bg);
+}
+
+.btn-primary:focus-visible {
+  outline: 3px solid var(--buttons-buttons-state-focus-outline);
+  outline-offset: 2px;
+}
+
+.form-error {
+  color: var(--semantic-colours-solid-negative-100);
+  margin: var(--sizing-8) 0 0;
+}
+
+/* ── Guestbook ── */
+.guestbook {
+  margin-top: var(--sizing-48);
+}
+
+.guestbook-heading-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--sizing-16);
+}
+
+.guestbook-heading-row h2 {
+  margin: 0;
+  color: var(--primary-120);
+}
+
+#message-count {
+  color: var(--shades-80);
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--shades-80);
+  padding: var(--sizing-48) var(--sizing-16);
+  border: 1px dashed var(--primary-40);
+  border-radius: 16px;
+}
+
+.message-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--sizing-16);
+}
+
+.message-card {
+  border-radius: 12px;
+  padding: var(--sizing-16);
+  box-shadow: var(--card-shadow);
+  border-left: 4px solid var(--card-accent, var(--primary-100));
+  background: var(--card-bg, var(--secondary-1-10));
+  display: flex;
+  flex-direction: column;
+  gap: var(--sizing-8);
+}
+
+.message-card .signer-name {
+  margin: 0;
+  color: var(--card-accent, var(--primary-120));
+}
+
+.message-card .signer-message {
+  margin: 0;
+  color: var(--black-100);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.message-card .signer-time {
+  margin: 0;
+  color: var(--shades-60);
+}
+
+/* ── Footer ── */
+.site-footer {
+  text-align: center;
+  color: var(--shades-60);
+  padding: var(--sizing-24);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: var(--sizing-48) var(--sizing-16);
+  }
+  .signature-form-card {
+    padding: var(--sizing-24);
+  }
+}
