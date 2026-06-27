@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-default-theme="dark">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,29 +14,34 @@
 <body class="bobby-view">
 
   <div class="aurora-bg" aria-hidden="true">
-    <span class="blob blob1"></span>
-    <span class="blob blob2"></span>
-    <span class="blob blob3"></span>
-    <span class="blob blob4"></span>
-    <span class="blob blob5"></span>
-    <span class="blob blob6"></span>
 
-    <span class="ring ring-tr"></span>
-    <span class="ring ring-bl"></span>
+    <div class="parallax-layer" data-depth="6">
+      <div class="milkyway"></div>
+      <div class="stardust stardust-small"></div>
+    </div>
 
-    <svg class="spark spark-a" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#d4a8c7"/></svg>
-    <svg class="spark spark-b" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#a8c4d4"/></svg>
-    <svg class="spark spark-c" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#7a7290"/></svg>
-    <svg class="spark spark-d" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#a8c4d4"/></svg>
-    <svg class="spark spark-e" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#d4a8c7"/></svg>
-    <svg class="spark spark-f" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#7a7290"/></svg>
+    <div class="parallax-layer" data-depth="16">
+      <span class="blob blob1"></span>
+      <span class="blob blob2"></span>
+      <span class="blob blob3"></span>
+      <span class="blob blob4"></span>
+      <span class="blob blob5"></span>
+      <span class="blob blob6"></span>
+      <span class="ring ring-tr"></span>
+      <span class="ring ring-bl"></span>
+      <div class="stardust stardust-big"></div>
+    </div>
+
+    <div class="parallax-layer" data-depth="32">
+      <svg class="spark spark-a" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#a8c4d4"/></svg>
+      <svg class="spark spark-b" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#7a7290"/></svg>
+      <svg class="spark spark-c" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#109de3"/></svg>
+      <svg class="spark spark-d" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#a8c4d4"/></svg>
+      <svg class="spark spark-e" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#109de3"/></svg>
+      <svg class="spark spark-f" viewBox="0 0 32 32" fill="none"><path d="M16 0L17.4 14.6L32 16L17.4 17.4L16 32L14.6 17.4L0 16L14.6 14.6Z" fill="#7a7290"/></svg>
+    </div>
+
   </div>
-
-  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="true">
-    <span class="toggle-track"></span>
-    <img class="toggle-thumb" src="assets/icons/thumb.svg" alt="" aria-hidden="true">
-    <img class="toggle-icon" src="assets/icons/moon.svg" alt="" aria-hidden="true">
-  </button>
 
   <header class="hero">
     <div class="hero-inner">
@@ -71,7 +76,7 @@
     Made with 💜 to send Bobby off in style.
   </footer>
 
-  <script src="js/theme.js"></script>
+  <script src="js/parallax.js"></script>
   <script src="js/guestbook.js"></script>
 </body>
 </html>

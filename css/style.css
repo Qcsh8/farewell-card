@@ -220,11 +220,159 @@ body {
 .bobby-view .blob5 { width: 540px; height: 540px; }
 .bobby-view .blob6 { width: 600px; height: 600px; }
 
+/* Cool sci-fi recolor for Bobby's view — swap the pink nebulae for indigo/cyan */
+.bobby-view .blob2 {
+  background: radial-gradient(circle, rgba(95, 120, 215, 0.85) 0%, rgba(95, 120, 215, 0) 68%);
+}
+.bobby-view .blob5 {
+  background: radial-gradient(circle, rgba(16, 157, 227, 0.6) 0%, rgba(16, 157, 227, 0) 68%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .blob,
   .ring,
   .spark {
     animation: none !important;
+  }
+}
+
+/* ── Bobby's view: parallax depth layers ── */
+.parallax-layer {
+  position: absolute;
+  inset: -10% -10% -10% -10%;
+  will-change: transform;
+}
+
+/* Milky Way band */
+.milkyway {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1900px;
+  height: 620px;
+  transform: translate(-50%, -50%) rotate(-28deg);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(90, 110, 190, 0.08) 12%,
+    rgba(150, 140, 210, 0.22) 32%,
+    rgba(190, 180, 225, 0.3) 50%,
+    rgba(120, 170, 200, 0.22) 68%,
+    rgba(70, 130, 180, 0.1) 86%,
+    transparent 100%
+  );
+  filter: blur(50px);
+  border-radius: 50%;
+}
+.milkyway::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 40%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 60%,
+    transparent 100%
+  );
+  filter: blur(20px);
+}
+
+/* Starfield speckle (CSS box-shadow starfield trick) */
+.stardust {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+}
+.stardust-small {
+  box-shadow:
+    663px 308px 0 0 #e8eeff, 1333px 98px 0 0 #ffffff, 1097px 192px 0 0 #e8eeff,
+    1193px 118px 0 0 #dce8ff, 439px 76px 0 0 #ffffff, 888px 856px 0 0 #ffffff,
+    492px 185px 0 0 #dce8ff, 869px 121px 0 0 #dce8ff, 253px 457px 0 0 #dce8ff,
+    1284px 126px 0 0 #dce8ff, 1199px 812px 0 0 #ffffff, 452px 95px 0 0 #dce8ff,
+    272px 593px 0 0 #e8eeff, 295px 241px 0 0 #dce8ff, 631px 370px 0 0 #ffffff,
+    1191px 384px 0 0 #e8eeff, 199px 128px 0 0 #dce8ff, 122px 421px 0 0 #e8eeff,
+    1393px 1088px 0 0 #e8eeff, 1591px 643px 0 0 #e8eeff, 1199px 928px 0 0 #e8eeff,
+    613px 508px 0 0 #ffffff, 1431px 499px 0 0 #ffffff, 1176px 614px 0 0 #dce8ff,
+    1013px 703px 0 0 #dce8ff, 919px 589px 0 0 #dce8ff, 149px 241px 0 0 #dce8ff,
+    856px 337px 0 0 #e8eeff, 311px 1001px 0 0 #e8eeff, 80px 158px 0 0 #dce8ff,
+    1173px 642px 0 0 #e8eeff, 1423px 717px 0 0 #dce8ff, 1017px 934px 0 0 #ffffff,
+    191px 552px 0 0 #e8eeff, 1427px 133px 0 0 #ffffff, 1497px 634px 0 0 #dce8ff,
+    1183px 912px 0 0 #e8eeff, 1467px 790px 0 0 #dce8ff, 710px 46px 0 0 #e8eeff,
+    727px 344px 0 0 #dce8ff, 239px 1011px 0 0 #ffffff, 446px 588px 0 0 #ffffff,
+    1512px 507px 0 0 #e8eeff, 800px 1016px 0 0 #ffffff, 340px 919px 0 0 #e8eeff,
+    1125px 569px 0 0 #ffffff, 881px 570px 0 0 #dce8ff, 850px 734px 0 0 #dce8ff,
+    779px 472px 0 0 #ffffff, 169px 360px 0 0 #ffffff, 475px 477px 0 0 #ffffff,
+    993px 373px 0 0 #e8eeff, 577px 8px 0 0 #ffffff, 858px 1094px 0 0 #e8eeff,
+    1248px 652px 0 0 #ffffff, 1414px 1055px 0 0 #dce8ff, 1341px 110px 0 0 #e8eeff,
+    1597px 803px 0 0 #e8eeff, 817px 807px 0 0 #ffffff, 986px 820px 0 0 #ffffff,
+    390px 137px 0 0 #ffffff, 902px 332px 0 0 #ffffff, 696px 107px 0 0 #ffffff,
+    0px 309px 0 0 #dce8ff, 207px 744px 0 0 #dce8ff, 52px 144px 0 0 #ffffff,
+    1257px 770px 0 0 #ffffff, 1299px 516px 0 0 #e8eeff, 1233px 745px 0 0 #e8eeff,
+    251px 236px 0 0 #e8eeff, 954px 983px 0 0 #e8eeff, 638px 175px 0 0 #ffffff,
+    209px 701px 0 0 #dce8ff, 542px 980px 0 0 #dce8ff, 330px 1057px 0 0 #ffffff,
+    420px 1081px 0 0 #e8eeff, 300px 55px 0 0 #dce8ff, 610px 186px 0 0 #dce8ff,
+    534px 1061px 0 0 #e8eeff, 342px 728px 0 0 #ffffff, 1090px 1029px 0 0 #e8eeff,
+    1303px 456px 0 0 #dce8ff, 1553px 399px 0 0 #ffffff, 820px 464px 0 0 #ffffff,
+    1060px 1009px 0 0 #e8eeff, 1497px 59px 0 0 #ffffff, 572px 967px 0 0 #e8eeff,
+    396px 705px 0 0 #e8eeff, 1480px 715px 0 0 #e8eeff, 164px 451px 0 0 #ffffff,
+    464px 962px 0 0 #ffffff, 691px 418px 0 0 #e8eeff, 1278px 3px 0 0 #e8eeff,
+    1337px 704px 0 0 #dce8ff, 173px 245px 0 0 #e8eeff, 1457px 408px 0 0 #e8eeff,
+    365px 888px 0 0 #dce8ff, 680px 177px 0 0 #dce8ff, 810px 948px 0 0 #e8eeff,
+    1522px 173px 0 0 #dce8ff, 325px 348px 0 0 #ffffff, 56px 309px 0 0 #dce8ff,
+    953px 299px 0 0 #dce8ff, 1220px 971px 0 0 #dce8ff, 717px 319px 0 0 #dce8ff,
+    1122px 268px 0 0 #ffffff, 29px 210px 0 0 #dce8ff, 1534px 285px 0 0 #e8eeff,
+    398px 432px 0 0 #ffffff, 515px 435px 0 0 #e8eeff, 1026px 492px 0 0 #dce8ff,
+    667px 531px 0 0 #dce8ff, 858px 268px 0 0 #ffffff, 1515px 724px 0 0 #e8eeff,
+    1356px 1058px 0 0 #e8eeff, 1027px 267px 0 0 #dce8ff, 310px 1072px 0 0 #dce8ff,
+    38px 901px 0 0 #ffffff, 1246px 8px 0 0 #ffffff, 352px 289px 0 0 #e8eeff,
+    1267px 246px 0 0 #dce8ff, 126px 667px 0 0 #dce8ff, 1061px 1086px 0 0 #dce8ff,
+    988px 217px 0 0 #dce8ff, 116px 508px 0 0 #ffffff, 567px 86px 0 0 #ffffff,
+    1039px 926px 0 0 #dce8ff, 57px 129px 0 0 #e8eeff, 666px 1035px 0 0 #dce8ff,
+    1048px 408px 0 0 #dce8ff;
+}
+.stardust-big {
+  box-shadow:
+    567px 926px 2px 0 #ffe9d6, 1039px 507px 2px 0 #ffe9d6, 1145px 414px 1px 0 #cfe0ff,
+    853px 249px 2px 0 #cfe0ff, 647px 148px 1px 0 #ffe9d6, 877px 149px 2px 0 #ffffff,
+    250px 316px 2px 0 #ffe9d6, 292px 518px 2px 0 #ffffff, 449px 192px 2px 0 #cfe0ff,
+    333px 458px 2px 0 #ffffff, 1055px 827px 2px 0 #cfe0ff, 400px 730px 1px 0 #cfe0ff,
+    1478px 749px 2px 0 #ffffff, 1134px 939px 1px 0 #cfe0ff, 787px 678px 2px 0 #ffe9d6,
+    1049px 131px 1px 0 #ffffff, 214px 172px 2px 0 #cfe0ff, 81px 371px 1px 0 #cfe0ff,
+    864px 529px 1px 0 #cfe0ff, 1098px 1054px 2px 0 #ffe9d6, 1434px 669px 2px 0 #ffffff,
+    117px 375px 1px 0 #cfe0ff, 550px 34px 1px 0 #ffe9d6, 533px 171px 1px 0 #ffe9d6,
+    136px 541px 2px 0 #ffffff, 23px 694px 2px 0 #ffe9d6, 548px 264px 1px 0 #ffffff,
+    224px 330px 1px 0 #cfe0ff, 370px 413px 2px 0 #cfe0ff, 1087px 421px 2px 0 #cfe0ff,
+    1024px 364px 2px 0 #cfe0ff, 37px 512px 1px 0 #ffffff, 37px 1035px 1px 0 #ffe9d6,
+    1053px 972px 2px 0 #ffffff, 217px 885px 2px 0 #ffe9d6, 1118px 805px 2px 0 #ffe9d6,
+    1408px 440px 2px 0 #ffffff, 406px 286px 2px 0 #cfe0ff, 111px 265px 1px 0 #ffffff,
+    1280px 523px 1px 0 #cfe0ff;
+}
+@keyframes stardust-twinkle {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+.stardust-big {
+  animation: stardust-twinkle 4s ease-in-out infinite;
+}
+
+/* No white-glass wash in Bobby's view — cool dark-blue/cyan tinted glass instead */
+.bobby-view .message-card {
+  background: linear-gradient(135deg, rgba(45, 70, 130, 0.4), rgba(16, 30, 60, 0.25));
+  border-color: rgba(140, 180, 255, 0.18);
+}
+.bobby-view .empty-state {
+  background: rgba(16, 30, 60, 0.35);
+  border-color: rgba(140, 180, 255, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stardust-big {
+    animation: none;
   }
 }
 
